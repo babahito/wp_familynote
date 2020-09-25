@@ -1,4 +1,130 @@
 body{
     margin:0;
-    
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+
+@media(min-width:768px){
+    .container:after{
+        content:"";
+        display:block;
+        clear:both;
+    }
+    .contents{
+        float:left;
+        width:70%;
+    }
+    .sub{
+        float:left;
+        width:30%;
+    }
+}
+/* ========================== */
+/* 基本構造 */
+/* ========================== */
+header{
+    background-color:#555;
+    box-shadow: 2px 2px 4px gray;
+}
+.contents{
+    padding-top:30px;
+    padding-bottom:20px;
+}
+.sub{
+    padding-top:30px;
+    padding-bottom:20px;
+}
+footer{
+    background-color:#999;
+    padding:2px 0;
+    text-align: center;
+}
+header,footer,.container{
+    padding-left:10px;
+    padding-right:10px;
+}
+/* ========================== */
+/* ヘッダー */
+/* ========================== */
+
+.site h1 a{
+    display:inline-block;
+    color:#fff;
+    padding:10px;
+    text-decoration: none;
+
+}
+.site h1{
+
+    margin:0;
+    font-size:30px;
+}
+
+/* ========================== */
+/* 記事概要 */
+/* ========================== */
+.gaiyou a{
+    display:block;
+    color:#333;
+    text-decoration: none;
+    padding:20px 0;
+    border-bottom:dotted 2px #ddd;
+}
+.gaiyou a:hover{
+    background-color:#eee;
+}
+.gaiyou h1{
+    margin-top:0;
+    margin-bottom:10px;
+    font-size:20px;
+}
+.gaiyou{
+    margin:0;
+    font-size:14px;
+}
+
+/* ========================== */
+/* 記事詳細 */
+/* ========================== */
+.kiji h1{
+    margin-top:0;
+    margin-bottom:10px;
+    font-size:36px;
+}
+.kiji p{
+    margin-top:0;
+    margin-bottom:20px;
+}
+@media(max-width:599px){
+    .kiji h1{
+        font-size:24px;
+    }
+    .kiji p{
+        font-size:14px;
+    }
+}
+
+/* ========================== */
+/* サイドバー */
+/* ========================== */
+.mymenu h2{
+    margin-top:0;
+    margin-bottom:10px;
+    border-bottom:1px dotted #333;
+    color:#333;
+    font-size:18px;
+}
+.mymenu ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+.mymenu li a{
+    display:block;
+    padding:10px 5px;
+    color:#333;
+    text-decoration: none;
+}
+.mymenu li a:hover{
+    background-color: #eee;
 }
