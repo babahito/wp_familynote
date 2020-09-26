@@ -18,6 +18,10 @@ body{
         float:left;
         width:30%;
     }
+    .contents{
+        padding-right:50px;
+        box-sizing: border-box;
+    }
 }
 /* ========================== */
 /* 基本構造 */
@@ -25,6 +29,10 @@ body{
 header{
     background-color:#555;
     box-shadow: 2px 2px 4px gray;
+}
+.container,.header-inner,.footer-inner{
+    width:1000px;
+    margin:0 auto;
 }
 .contents{
     padding-top:30px;
@@ -36,12 +44,14 @@ header{
 }
 footer{
     background-color:#999;
-    padding:2px 0;
+    padding:1px 0;
     text-align: center;
 }
-header,footer,.container{
-    padding-left:10px;
-    padding-right:10px;
+@media(min-width:1040px){
+    header,footer,.container{
+        padding-left:10px;
+        padding-right:10px;
+    }
 }
 /* ========================== */
 /* ヘッダー */
@@ -58,6 +68,71 @@ header,footer,.container{
 
     margin:0;
     font-size:30px;
+}
+
+/* ========================== */
+/* ナビゲーション */
+/* ========================== */
+#mainmenu{
+    display:none;
+}
+.mainmenu ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+.mainmenu li a{
+    display:block;
+    padding:10px 5px;
+    color:#333;
+    font-size:14px;
+    text-decoration: none;
+}
+.mainmenu li a:hover{
+    background-color: #eee;
+}
+#navbtn span{
+    display:inline-block;
+    text-indent:-9999px;
+}
+@media(min-width:760px){
+    .header-inner:after{
+        content:"";
+        display: block;
+        clear:both;
+    }
+    .site{
+        float:left;
+        width:auto;
+    }
+    .sitenav{
+        float:right;
+        width:auto;
+    }
+}
+/* トグルボタン */
+.header-inner{
+    position: relative;
+}
+#navbtn{
+    position:absolute;
+    top:15px;
+    right:0;
+    padding:6px 12px;
+    border:solid 1px #aaa;
+    border-radius:5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+#navbtn:hover{
+    background-color: #ddd;
+}
+#navbtn:focus{
+    outline:none;
+}
+#navbtn{
+    display: inline-block;
+    text-indent: -99999px;
 }
 
 /* ========================== */
@@ -104,6 +179,10 @@ header,footer,.container{
     }
 }
 
+.aligncenter{
+    display:block;
+    margin:30px auto;
+}
 /* ========================== */
 /* サイドバー */
 /* ========================== */

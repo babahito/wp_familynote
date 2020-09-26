@@ -18,10 +18,30 @@
 </head>
 <body <?php body_class(); ?>>
 <header>
-    <div class="site">
-        <h1><a href="<?php echo home_url(); ?>">
-            <?php bloginfo('name'); ?>
-        </a></h1>
+    <div class="header-inner">
+        <div class="site">
+            <h1><a href="<?php echo home_url(); ?>">
+                <?php bloginfo('name'); ?>
+            </a></h1>
+        </div>
+        <button><a href="membership-registration">会員登録</a></button>
+        <button><a href="membership-login">会員情報</a></button>
+
+
+        <!-- トグルボタン -->
+        <div class="sitenav">
+            <button type="button" id="navbtn">
+                MENU
+            </button>
+            <!-- カスタムメニュー（ナビゲーション） -->
+            <?php wp_nav_menu(array(
+                'theme_location'=>'sitenav',
+                'container'=>'nav',
+                'container_class'=>'mainmenu',
+                'container_id'=>'mainmenu'
+            )); ?>
+        </div>
     </div>
+    
 </header>
     

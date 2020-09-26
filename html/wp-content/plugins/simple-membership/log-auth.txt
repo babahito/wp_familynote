@@ -1,0 +1,21 @@
+[2020/09/26 13:42:07] - SUCCESS: wp_authenticate action. Empty username provided. Adding set_current_username hook to catch potential login attempt.
+[2020/09/26 13:42:15] - SUCCESS: Authentication request - Username: babahito
+[2020/09/26 13:42:15] - SUCCESS: Authentication successful for username: babahito. Executing swpm_login action hook.
+[2020/09/26 13:42:15] - SUCCESS: Trying wp_signon() with username: babahito
+[2020/09/26 13:42:15] - SUCCESS: wp_authenticate action. User with username: babahito is already logged in.
+[2020/09/26 13:42:15] - SUCCESS: wp_login hook triggered. Username: babahito
+[2020/09/26 13:42:15] - SUCCESS: Setting current WP user to: babahito
+[2020/09/26 13:42:15] - SUCCESS: Triggering swpm_after_login hook.
+[2020/09/26 13:43:39] - SUCCESS: wp_authenticate action. Handling login for username: babatake
+[2020/09/26 13:43:39] - SUCCESS: SwpmAuth::login()
+[2020/09/26 13:43:39] - SUCCESS: wp_login hook triggered. Username: babatake
+[2020/09/26 14:25:15] - SUCCESS: wp_authenticate action. Empty username provided. Adding set_current_username hook to catch potential login attempt.
+[2020/09/26 14:25:27] - SUCCESS: wp_authenticate action. Handling login for username: babatake
+[2020/09/26 14:25:27] - SUCCESS: SwpmAuth::login()
+[2020/09/26 14:25:27] - SUCCESS: Authentication request - Username: babatake
+[2020/09/26 14:25:27] - SUCCESS: wp_login hook triggered. Username: babatake
+[2020/09/26 15:48:59] - SUCCESS: wp_authenticate action. Empty username provided. Adding set_current_username hook to catch potential login attempt.
+[2020/09/26 15:49:08] - SUCCESS: wp_authenticate action. Handling login for username: babatake
+[2020/09/26 15:49:08] - SUCCESS: SwpmAuth::login()
+[2020/09/26 15:49:08] - SUCCESS: Authentication request - Username: babatake
+[2020/09/26 15:49:08] - SUCCESS: wp_login hook triggered. Username: babatake
